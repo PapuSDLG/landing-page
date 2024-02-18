@@ -1,6 +1,10 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -9,7 +13,7 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 a {
     text-decoration: none;
@@ -34,6 +38,7 @@ p {
     font-size: 24px;
     font-weight: bolder;
 }
+
 .header-info, .header {
     display: flex;
 }
@@ -47,8 +52,9 @@ p {
 .header-info {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px 10px;
     text-align: center;
+    
 }
 
 .description {
@@ -63,8 +69,8 @@ p {
     
 }
 .placeholder {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 300px;
     border: 2px solid burlywood;
     border-radius: 10px;
 }
@@ -74,11 +80,73 @@ p {
 .button-mod {
     width: fit-content;
     padding: 6px 25px;
-    background-color: lightblue;
-    border: 1px solid lightblue;
+    background-color: #00BFFF;
+    border: 1px solid #00BFFF;
     border-radius: 10px;
 }
+.header-char {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .second-container {
+    padding: 10px;
+}
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.text-info {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #003cff;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.char-info {
+    display: flex;
+    color:#1F2937;
+    font-size: 14px;
+    text-align: center;
+}
+.char-image {
+    width: 150px;
+    height: 150px;
+}
+.third-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #E5E7EB;
+}
+/* Third part */
+.quote {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+.quote-char {
+    font-size: 24px;
+    font-style: italic;
+    color: #1F2937;
+    width: 420px;
+}
+#char {
+    display: flex;
+    justify-content: right;
+    font-size: 19px;
+    font-weight: 900;
+    color: #1F2937;
+    font-style: normal;
+}
+.footer {
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
